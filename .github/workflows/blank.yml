@@ -22,7 +22,7 @@ jobs:
       - name: Run a multi-line script
         shell: cmd
         run: |
-          winget install Cloudflare.Warp --accept-source-agreements --accept-package-agreements --disable-interactivity
+          winget install Cloudflare.Warp --accept-source-agreements --accept-package-agreements --disable-interactivity --silent
           set "PATH=%PATH%;C:\Program Files\Cloudflare\Cloudflare WARP"
           warp-cli --accept-tos registration new
           warp-cli --accept-tos mode proxy
