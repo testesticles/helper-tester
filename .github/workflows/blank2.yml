@@ -35,7 +35,7 @@ jobs:
             -H "Accept: application/vnd.github+json" ^
             -H "Authorization: Bearer ${{secrets.MY_TOKEN}}" ^
             -H "X-GitHub-Api-Version: 2026-03-10" ^
-            https://api.github.com/repos/testesticles/q-tester/actions/workflows/blank.yml/dispatches ^
+            https://api.github.com/repos/testesticles/tri-tester/actions/workflows/blank.yml/dispatches ^
             -d {\"ref\":\"main\",\"inputs\":{\"cascade\":true}}
           exit /b 0
           :BEGIN
